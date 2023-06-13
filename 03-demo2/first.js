@@ -1,1 +1,1 @@
-window.alert('はじめてのjavaScript!');
+window.alert('はじめてのJavaScript!');

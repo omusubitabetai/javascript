@@ -6,7 +6,8 @@ body {
     height: 100vh;
     background: #000;
 }
-div {
+
+div{
     background: #fff;
     padding: 2rem;
     border-radius: 1rem;
