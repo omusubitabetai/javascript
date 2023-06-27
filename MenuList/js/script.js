@@ -1,5 +1,14 @@
 const menu = document.querySelector('#menu');
 
+const strawberry = {
+  name: 'イチゴ',
+  img: 'strawberry.jpg',
+  price: 450,
+}
+
+console.log(strawberry.name);
+console.log(strawberry['img']);
+
 const lists = [
   'strawberry.jpg',
   'lime.jpg',
@@ -9,15 +18,11 @@ const lists = [
   'apple.jpg',
 ];
 
-//console.log(lists[0]);
+//console.log(lists.length);
 
-const content = `<div><img src="images/${lists[0]}" alt=""></div>
-    <div><img src="images/${lists[1]}" alt=""></div>
-    <div><img src="images/${lists[2]}" alt=""></div>
-    <div><img src="images/${lists[3]}" alt=""></div>
-    <div><img src="images/${lists[4]}" alt=""></div>
-    <div><img src="images/${lists[5]}" alt=""></div>
-`;
+for(let i = 0; i < lists.length; i++){
+const content = `<div><img src="images/${lists[i]}" alt=""></div>`;
+menu.insertAdjacentHTML('beforeend',content);
+}
 
 //menu.textContent = content;
-menu.insertAdjacentHTML('beforeend',content);
